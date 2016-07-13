@@ -59,7 +59,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-80740727-1'            # Format: UA-xxxxxx-xx
 ga_domain: https://playeryan.github.io/
@@ -68,7 +68,7 @@ ga_domain: https://playeryan.github.io/
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "与自我作对"
+sidebar-about-description: "与自我作对。"
 sidebar-avatar: /img/avatar-playeryan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -80,7 +80,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Friends
-friends: [
+# friends: [
     # {
     #     title: "Hux Blog",
     #     href: "http://huangxuan.me"
@@ -89,4 +89,4 @@ friends: [
     #     title: "Foo",
     #     href: "#"
     # }
-]
+# ]
