@@ -1,64 +1,92 @@
-# Site wide configuration
+# Site settings
+title: PlayerYan Blog
+SEOTitle: 肚腩均的博客 | PlayerYan Blog
+header-img: img/home-bg.jpg
+email: playeryan2012@gmail.com
+description: "Draw Pixels"
+keyword: ""
+url: "https://playeryan.github.io/"              # your host, for absolute URL
+baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
 
-title: "PlayerYan Blog"
-description: "Draw Pixels."
-logo: logo.jpg # 120x120 px default image used for Twitter summary card
-teaser: teaser.jpg # 400x250 px default teaser image used in image archive grid
-locale: en
-url:
-feed:
-  path: atom.xml
 
-# Jekyll configuration
 
-sass:
-  sass_dir: _sass
-  style: compressed
-permalink: /:categories/:title/
-kramdown:
-  toc_levels: 1..2
+# SNS settings
+RSS: false
+weibo_username:     playeryan
+zhihu_username:     du-nan-jun
+github_username:    playeryan
+#twitter_username:  huxpro
+#facebook_username:  huxpro
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
-# Site owner
-owner:
-  name: playeryan
-  email: playeryan2012@gmail.com
-  twitter:
-  google:
-    ad-client:
-    ad-slot:
-  bio:
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-  disqus-shortname: playeryan
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
 
 
-include:
-  - .htaccess
-exclude:
-  - "*.less"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - config
-  - gulpfile.js
-  - lib
-  - log
-  - node_modules
-  - package.json
-  - spec
-  - tmp
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: PlayerYan
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+# ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "与自我作对"
+sidebar-avatar: /img/avatar-playeryan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+# friends: [
+#     {
+#         title: "Hux Blog",
+#         href: "http://huangxuan.me"
+#     },
+#     {
+#         title: "Foo",
+#         href: "#"
+#     }
+# ]
