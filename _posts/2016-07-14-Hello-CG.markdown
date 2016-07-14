@@ -6,7 +6,7 @@ date:       2016-07-14 08:00:00
 author:     "PlayYan"
 header-img: "img/post-bg-2015.jpg"
 tags: 
-	- Computer Graphic
+    - Computer Graphic
 ---
 
 > "Yeah It's on. "
